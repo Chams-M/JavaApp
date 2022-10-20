@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="@string/titre1"
+        style="@style/st_titre1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Email"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_email_auth"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="saisir votre email"
+        android:inputType="textPersonName"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Mot de passe"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ed_pwd_auth"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_quitter_auth"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:text="Quitter"
+            app:backgroundTint="#F44336" />
+
+        <Button
+            android:id="@+id/bt_valider_auth"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:insetLeft="10dp"
+            android:text="Valider"
+            app:backgroundTint="#4CAF50" />
+    </LinearLayout>
+
+</LinearLayout>
